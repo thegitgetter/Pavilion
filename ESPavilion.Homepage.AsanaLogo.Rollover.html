@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hover Effect</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+            width: 500px; /* Width of the container */
+            height: 500px; /* Height of the container */
+            font-family: 'Open Sans', sans-serif; /* Open Sans font */
+        }
+
+        .image-container img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the container */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgba(0,0,0,0.6); /* Semi-transparent overlay */
+            color: white;
+            transition: .5s ease;
+            opacity: 0;
+            padding: 10px 20px; /* Top/bottom padding 10px, left/right padding 20px */
+            text-align: left; /* Left-justified text */
+        }
+
+        .image-container:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <img src="https://live.staticflickr.com/65535/53390295515_c55f138e9a_b.jpg" alt="Asana logo">
+        <div class="overlay">Go to Asana</div>
+    </div>
+</body>
+</html>
+
+
+
+
